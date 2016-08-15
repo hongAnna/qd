@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>无标题文档</title>
+
+<style>
+*{margin:0 auto; }
+.box{ width:420px;height:400px;margin:0 auto; }
+.screen{ margin-top:20px;width:350px;height:65px;}
+.screen input{ border-radius:5px;width:350px; height:65px;  background:#cd2727; border:none;color:#FFF; font-size:22px;}
+.button{float:left;}
+.button li{list-style:none;float:left;width:63px;padding:10px 10px 10px 0;}
+.button li input{font-size:22px;color:#FFF; width:53px; height:53px; background:#8d7c7c; border:none; border-radius:5px; }
+</style>
+
+</head>
+
+<body>
+
+<div class="box">
+    <div class="screen"><input id="screen" type="text" value="" readonly="readonly"  /></div>
+    <ul class="button">
+        <li><input type="button" value="1" onClick="inputKey(this.value);" /></li>
+        <li><input type="button" value="2" onClick="inputKey(this.value);" /></li>
+        <li><input type="button" value="3" onClick="inputKey(this.value);" /></li>
+        <li><input type="button" value="4" onClick="inputKey(this.value);" /></li>
+        <li><input class="ft18" type="button" value="清空" onClick="clearFun();" /></li>
+        <li><input type="button" value="5" onClick="inputKey(this.value);" /></li>
+        <li><input type="button" value="6" onClick="inputKey(this.value);" /></li>
+        <li><input type="button" value="7" onClick="inputKey(this.value);" /></li>
+        <li><input type="button" value="8" onClick="inputKey(this.value);" /></li>
+        <li><input class="ft18" type="button" value="根号" onClick="sqr();" /></li>
+        <li><input type="button" value="9" onClick="inputKey(this.value);" /></li>
+        <li><input type="button" value="0" onClick="inputKey(this.value);" /></li>
+        <li><input type="button" value="." onClick="inputKey(this.value);" /></li>
+        <li><input type="button" value="del" onClick="del();" /></li>
+        <li><input type="button" value="%" onClick="operatingFun('%')"/></li>
+        <li><input type="button" value="+" onClick="operatingFun('+')" /></li>
+        <li><input type="button" value="-" onClick="operatingFun('-')"/></li>
+        <li><input type="button" value="*" onClick="operatingFun('*')"/></li>
+        <li><input type="button" value="/" onClick="operatingFun('/')"/></li>
+        <li><input type="button" value="=" onClick="result()" /></li>
+    </ul>
+</div>
+<script src="jisuan.js" ></script>
+</body>
+</html>
